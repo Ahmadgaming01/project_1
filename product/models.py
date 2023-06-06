@@ -5,7 +5,7 @@ from datetime import datetime
 
 class Item(models.Model):
     name = models.CharField(max_length=50)
-    pro_details = models.TextField (max_length= 1500)
+    pro_details = models.TextField (max_length= 15000)
     image = models.ImageField(upload_to='Items/', blank=True)
     price = models.IntegerField()
     category = models.CharField(max_length=50)
